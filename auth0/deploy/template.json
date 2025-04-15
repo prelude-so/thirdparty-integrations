@@ -1,0 +1,10 @@
+{
+  "name": "action-phone-message-integration-test",
+  "runtime": "node16",
+  "supported_triggers": [
+    {
+      "id": "send-phone-message",
+      "version": "v2"
+    }
+  ]
+}
