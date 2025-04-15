@@ -1,0 +1,20 @@
+{
+  "secrets": [
+    {
+      "name": "PRELUDE_SECRET_KEY",
+      "label": "Prelude Secret Key",
+      "description": "The secret key for the Prelude API. You can find it in the Prelude's Dashboard under Settings > API Keys."
+    }
+  ],
+  "configuration": [],
+  "dependencies": [
+    {
+      "name": "ua-parser-js",
+      "version": "1.0.40"
+    },
+    {
+      "name": "@prelude.so/sdk",
+      "version": "0.1.0"
+    }
+  ]
+}
