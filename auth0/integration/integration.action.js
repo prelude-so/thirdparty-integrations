@@ -40,10 +40,15 @@ exports.onExecuteSendPhoneMessage = async (event) => {
 
   const ua = parser(event.request.user_agent);
 
+  const correlationId = `auth0:${event.tenant.id}:${event.user.user_id}`;
+
   await client.verification.create({
     target: {
       type: "phone_number",
       value: recipient.replace(/[\s-]/g, ""),
+    },
+    metadata: {
+      correlation_id: correlationId,
     },
     signals: {
       ip,
